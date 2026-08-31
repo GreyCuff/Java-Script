@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Data Structure</title>
+</head>
+
+<body>
+
+    <h2>Student Information</h2>
+    <p id="studentDetails"></p>
+
+    <script>
+
+        // Create an object to store related student data
+        var student = {
+            name: "Ishaan",
+            age: 13,
+            grade: 8,
+            subjects: ["Math", "Science", "English"],
+            address: {
+                city: "Delhi",
+                country: "India"
+            }
+        };
+
+        // Access different types of data
+        document.getElementById("studentDetails").innerHTML =
+            "Name: " + student.name + "<br>" +
+            "Age: " + student.age + "<br>" +
+            "Grade: " + student.grade + "<br>" +
+            "First Subject: " + student.subjects[0] + "<br>" +
+            "City: " + student.address.city;
+
+    </script>
+
+</body>
+</html>
