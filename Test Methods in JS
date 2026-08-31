@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Test Method</h2>
+    <p>Check whether a word exists inside a sentence.</p>
+
+    <p id="result"></p>
+
+    <script>
+
+        var sentence = "Learning JavaScript is fun!";
+
+        // Create a pattern to search for
+        var pattern = new RegExp("JavaScript");
+
+        // test() checks whether the pattern exists
+        var found = pattern.test(sentence);
+
+        document.getElementById("result").innerHTML =
+            "Is 'JavaScript' present in the sentence? " + found;
+
+    </script>
+
+</body>
+</html>
