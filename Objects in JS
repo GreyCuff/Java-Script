@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Objects</title>
+</head>
+
+<body>
+
+    <h2>My Favorite Book</h2>
+
+    <p id="bookInfo"></p>
+
+    <script>
+
+        // Create an object containing book information
+        var myBook = {
+            title: "The Secret Garden",
+            author: "Frances Hodgson Burnett",
+            pages: 280,
+            available: true
+        };
+
+        // Access object properties using dot notation
+        var title = myBook.title;
+        var author = myBook.author;
+
+        // Access properties using bracket notation
+        var pages = myBook["pages"];
+        var availability = myBook["available"];
+
+        // Display the object information
+        document.getElementById("bookInfo").innerHTML =
+            "Book: " + title + "<br>" +
+            "Author: " + author + "<br>" +
+            "Pages: " + pages + "<br>" +
+            "Available: " + availability;
+
+    </script>
+
+</body>
+</html>
