@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Structure</title>
+</head>
+
+<body>
+
+    <h2 id="heading">My Library</h2>
+
+    <div id="library">
+        <p id="book1">The first book</p>
+        <p id="book2">The second book</p>
+    </div>
+
+    <script>
+
+        // Access the parent element
+        var library = document.getElementById("library");
+
+        // Access the child elements
+        var firstBook = document.getElementById("book1");
+        var secondBook = document.getElementById("book2");
+
+        // Change the text of the child elements
+        firstBook.innerHTML = "Science Explorer";
+        secondBook.innerHTML = "World Adventures";
+
+        // Change the parent element's background
+        library.style.backgroundColor = "lightyellow";
+
+    </script>
+
+</body>
+</html>
