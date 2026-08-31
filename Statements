@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Statements</h2>
+
+    <p id="result"></p>
+
+    <script>
+        // Declare the variables
+        var price, quantity, total;
+
+        // Assign values
+        price = 50;
+        quantity = 4;
+
+        // Calculate the total amount
+        total = price * quantity;
+
+        // Display the result
+        document.getElementById("result").innerHTML =
+            "The total amount is ₹" + total + ".";
+    </script>
+
+</body>
+</html>
