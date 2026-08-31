@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Arrays in JavaScript</h2>
+    <p>Here are some of my favorite sports.</p>
+
+    <p id="output"></p>
+
+    <script>
+
+        // Create an array with multiple values
+        var sports = ["Football", "Cricket", "Tennis", "Basketball"];
+
+        // Access array elements using their index
+        var firstSport = sports[0];
+        var thirdSport = sports[2];
+
+        // Display the array values
+        document.getElementById("output").innerHTML =
+            "All Sports: " + sports + "<br>" +
+            "First Sport: " + firstSport + "<br>" +
+            "Third Sport: " + thirdSport + "<br>" +
+            "Total Sports: " + sports.length;
+
+    </script>
+
+</body>
+</html>
