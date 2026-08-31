@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Syntax and Comments</title>
+</head>
+<body>
+
+    <h1 id="heading"></h1>
+    <p id="message"></p>
+
+    <script>
+        // This program displays a heading and a message
+
+        document.getElementById("heading").innerHTML =
+        "Learning JavaScript Syntax";
+
+        /* 
+           This is a multi-line comment.
+           It explains that JavaScript can update
+           HTML elements using their ID.
+        */
+
+        document.getElementById("message").innerHTML =
+        "JavaScript follows simple syntax rules and comments make code easier to understand.";
+    </script>
+
+</body>
+</html>
