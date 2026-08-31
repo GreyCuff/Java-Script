@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Call Stack</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Call Stack</h2>
+    <p id="output"></p>
+
+    <script>
+
+        var message = "";
+
+        function startGame() {
+            message += "Game started<br>";
+            choosePlayer();
+        }
+
+        function choosePlayer() {
+            message += "Player selected<br>";
+            showScore();
+        }
+
+        function showScore() {
+            message += "Score displayed: 100<br>";
+        }
+
+        // Start the first function
+        startGame();
+
+        document.getElementById("output").innerHTML = message;
+
+    </script>
+
+</body>
+</html>
