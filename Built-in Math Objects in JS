@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Math Object</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Math Object</h2>
+    <p>Let's explore some built-in Math methods.</p>
+
+    <p id="result"></p>
+
+    <script>
+
+        var number = 7.6;
+
+        // Using built-in Math methods
+        var rounded = Math.round(number);
+        var roundedUp = Math.ceil(number);
+        var roundedDown = Math.floor(number);
+        var squareRoot = Math.sqrt(64);
+        var largerNumber = Math.max(15, 8, 24, 11);
+
+        document.getElementById("result").innerHTML =
+            "Original Number: " + number + "<br>" +
+            "Rounded: " + rounded + "<br>" +
+            "Rounded Up: " + roundedUp + "<br>" +
+            "Rounded Down: " + roundedDown + "<br>" +
+            "Square Root of 64: " + squareRoot + "<br>" +
+            "Largest Number: " + largerNumber;
+
+    </script>
+
+</body>
+</html>
