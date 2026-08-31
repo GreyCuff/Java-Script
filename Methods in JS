@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript String Methods</h2>
+    <p>Let's explore some useful methods.</p>
+
+    <p id="result"></p>
+
+    <script>
+
+        var word = "JavaScript";
+
+        // Using different string methods
+        var upperWord = word.toUpperCase();
+        var lowerWord = word.toLowerCase();
+        var startsWithJ = word.startsWith("J");
+
+        document.getElementById("result").innerHTML =
+            "Original Word: " + word + "<br>" +
+            "Uppercase: " + upperWord + "<br>" +
+            "Lowercase: " + lowerWord + "<br>" +
+            "Starts with J: " + startsWithJ;
+
+    </script>
+
+</body>
+</html>
