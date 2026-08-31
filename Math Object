@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Math Object</title>
+</head>
+
+<body>
+
+    <h2>Math Object in JavaScript</h2>
+    <p>Let's perform some mathematical calculations.</p>
+
+    <p id="output"></p>
+
+    <script>
+
+        var value = 12.4;
+
+        // Use Math object methods
+        var nearest = Math.round(value);
+        var higher = Math.ceil(value);
+        var lower = Math.floor(value);
+        var power = Math.pow(3, 2);
+        var minimum = Math.min(14, 6, 21, 9);
+
+        document.getElementById("output").innerHTML =
+            "Number: " + value + "<br>" +
+            "Nearest Integer: " + nearest + "<br>" +
+            "Rounded Up: " + higher + "<br>" +
+            "Rounded Down: " + lower + "<br>" +
+            "3 raised to 2: " + power + "<br>" +
+            "Smallest Number: " + minimum;
+
+    </script>
+
+</body>
+</html>
