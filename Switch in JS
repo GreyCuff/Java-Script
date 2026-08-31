@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Switch Statement</h2>
+
+    <p id="result"></p>
+
+    <script>
+
+        var grade = "B";
+        var feedback;
+
+        switch (grade) {
+            case "A":
+                feedback = "Excellent work!";
+                break;
+
+            case "B":
+                feedback = "Great job! Keep improving.";
+                break;
+
+            case "C":
+                feedback = "Good effort. You can do even better.";
+                break;
+
+            case "D":
+                feedback = "Try to practice a little more.";
+                break;
+
+            default:
+                feedback = "Grade not recognized.";
+        }
+
+        document.getElementById("result").innerHTML =
+            "Grade " + grade + ": " + feedback;
+
+    </script>
+
+</body>
+</html>
