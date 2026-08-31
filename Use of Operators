@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Operators</h2>
+    <p>Let's calculate the details of a shopping bill.</p>
+
+    <p id="result"></p>
+
+    <script>
+        var price = 250;
+        var quantity = 3;
+
+        // Arithmetic operators
+        var total = price * quantity;
+        var discount = 100;
+        var finalAmount = total - discount;
+
+        // Comparison operator
+        var isExpensive = finalAmount > 500;
+
+        // Display the results
+        document.getElementById("result").innerHTML =
+            "Total Price: ₹" + total + "<br>" +
+            "After Discount: ₹" + finalAmount + "<br>" +
+            "Is the final amount above ₹500? " + isExpensive;
+    </script>
+
+</body>
+</html>
