@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Scope of Variables</h2>
+
+    <button onclick="showResult()">Show Result</button>
+
+    <p id="inside"></p>
+    <p id="outside"></p>
+
+    <script>
+
+        // Global variable
+        var school = "Green Valley School";
+
+        function showResult() {
+
+            // Local variable
+            var student = "Kabir";
+
+            document.getElementById("inside").innerHTML =
+                student + " studies at " + school;
+        }
+
+        // The global variable can be accessed outside the function
+        document.getElementById("outside").innerHTML =
+            "School: " + school;
+
+    </script>
+
+</body>
+</html>
