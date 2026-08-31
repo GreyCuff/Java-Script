@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Properties in JavaScript</title>
+</head>
+
+<body>
+
+    <h2>My Bicycle</h2>
+    <p id="details"></p>
+
+    <script>
+
+        // Create an object with different properties
+        var bicycle = {
+            brand: "Hero",
+            color: "Blue",
+            gears: 18,
+            electric: false
+        };
+
+        // Read individual properties
+        var brandName = bicycle.brand;
+        var bikeColor = bicycle["color"];
+
+        // Change an existing property
+        bicycle.gears = 21;
+
+        // Add a new property
+        bicycle.price = 8500;
+
+        // Display the object properties
+        document.getElementById("details").innerHTML =
+            "Brand: " + brandName + "<br>" +
+            "Color: " + bikeColor + "<br>" +
+            "Gears: " + bicycle.gears + "<br>" +
+            "Electric: " + bicycle.electric + "<br>" +
+            "Price: ₹" + bicycle.price;
+
+    </script>
+
+</body>
+</html>
