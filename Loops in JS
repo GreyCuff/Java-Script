@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Loop</h2>
+    <p>Display the names of some students.</p>
+
+    <p id="students"></p>
+
+    <script>
+
+        var students = ["Aarav", "Meera", "Vivaan", "Anaya", "Kabir"];
+        var list = "";
+
+        // Repeat the code for every student
+        for (var index = 0; index < students.length; index++) {
+            list += (index + 1) + ". " + students[index] + "<br>";
+        }
+
+        // Display all student names
+        document.getElementById("students").innerHTML = list;
+
+    </script>
+
+</body>
+</html>
