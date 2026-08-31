@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Digital Clock</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+        }
+
+        #clock {
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>My Digital Clock</h2>
+
+    <p>The current time is:</p>
+    <div id="clock"></div>
+
+    <script>
+
+        function updateClock() {
+
+            // Get the current date and time
+            var currentTime = new Date();
+
+            // Convert the time into a readable format
+            var time = currentTime.toLocaleTimeString();
+
+            // Display the updated time
+            document.getElementById("clock").innerHTML = time;
+        }
+
+        // Run the function immediately
+        updateClock();
+
+        // Update the clock every 1000 milliseconds
+        setInterval(updateClock, 1000);
+
+    </script>
+
+</body>
+</html>
