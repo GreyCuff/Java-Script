@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML DOM</title>
+</head>
+
+<body>
+
+    <h2 id="title">My Garden</h2>
+
+    <p id="description">
+        Click the button to update the garden.
+    </p>
+
+    <button onclick="updateGarden()">Grow Garden</button>
+
+    <script>
+
+        function updateGarden() {
+
+            // Find an HTML element using its ID
+            var heading = document.getElementById("title");
+            var text = document.getElementById("description");
+
+            // Change the content of the elements
+            heading.innerHTML = "My Beautiful Garden";
+            text.innerHTML = "The garden now has colorful flowers!";
+
+            // Change the appearance using the DOM
+            heading.style.color = "green";
+        }
+
+    </script>
+
+</body>
+</html>
