@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External JavaScript</title>
+</head>
+
+<body>
+
+    <h2>Learning External JavaScript</h2>
+
+    <p id="message"></p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <!-- Connect the external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+function showMessage() {
+
+    document.getElementById("message").innerHTML =
+        "Hello! This message comes from an external JavaScript file.";
+
+}
