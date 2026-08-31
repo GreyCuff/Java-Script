@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript Functions</h2>
+    <p>Calculate the total marks of a student.</p>
+
+    <p id="result"></p>
+
+    <script>
+
+        // Function to calculate total marks
+        function calculateTotal(mark1, mark2, mark3) {
+            return mark1 + mark2 + mark3;
+        }
+
+        // Call the function with three marks
+        var totalMarks = calculateTotal(85, 90, 78);
+
+        // Display the result
+        document.getElementById("result").innerHTML =
+            "The student's total marks are: " + totalMarks;
+
+    </script>
+
+</body>
+</html>
